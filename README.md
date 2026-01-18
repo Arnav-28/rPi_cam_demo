@@ -207,8 +207,8 @@ ros2 run rqt_image_view rqt_image_view
 For easier startup, create a launch file:
 
 ```bash
-mkdir -p ~/ros2_humble/src/v4l2_camera/launch
-nano ~/ros2_humble/src/v4l2_camera/launch/camera.launch.py
+mkdir -p ~/ros2_humble/src/rpi_cam_demo/launch
+nano ~/ros2_humble/src/rpi_cam_demo'/launch/camera.launch.py
 ```
 
 Add the following content:
@@ -236,14 +236,14 @@ Save and rebuild:
 
 ```bash
 cd ~/ros2_humble
-colcon build --symlink-install --packages-select v4l2_camera
+colcon build --symlink-install --packages-select rpi_cam_demo
 source install/setup.bash
 ```
 
 Launch with:
 
 ```bash
-ros2 launch v4l2_camera camera.launch.py
+ros2 launch rpi_cam_demo camera.launch.py
 ```
 
 ---
